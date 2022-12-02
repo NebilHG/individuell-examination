@@ -5,7 +5,7 @@ const BASE_URL = 'https://my-json-server.typicode.com/zocom-christoffer-wallenbe
 
 
 async function getKey() {
-    const response = await fetch(`${BASE_URL}/keys`, { method: 'POST' });
+    const response = await fetch(`${BASE_URL}/keys`);
     const data = await response.json();
     console.log('Key :',data);
 
